@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    background: #BBFBFF; 
+    color: #1e293b; 
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #5409DA;
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 90%;
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    color: #8DD8FF;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 7px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #8DD8FF;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h2 {
+    color: #4E71FF;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #4E71FF;
+    padding-left: 10px;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #334155;
+}
+
+#contact a {
+    color: #4E71FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #5409DA; /* Match header */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
